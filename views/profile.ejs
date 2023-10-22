@@ -1,0 +1,78 @@
+<!-- views/property.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= dataProfile.first_name %>
+            <%= dataProfile.last_name %>
+    </title>
+</head>
+
+<body>
+    <h1>
+        <%= dataProfile.first_name %>
+            <%= dataProfile.last_name %>
+    </h1>
+    <img src="<%= dataProfile.photo_link %>" alt="Profile Photo">
+
+    <h2>Contact Information</h2>
+    <p>Email: <%= dataProfile.email %>
+    </p>
+    <p>Phone Number: <%= dataProfile.phone_number %>
+    </p>
+    <p>LinkedIn: <%= dataProfile.linkedin_url %>
+    </p>
+    <p>Instagram: <%= dataProfile.instagram_url %>
+    </p>
+    <p>Twitter: <%= dataProfile.twitter_url %>
+    </p>
+    <p>Facebook: <%= dataProfile.facebook_url %>
+    </p>
+    <p>YouTube: <%= dataProfile.youtube_url %>
+    </p>
+
+    <h2>Location</h2>
+    <p>
+        <%= dataProfile.location %>
+    </p>
+
+    <h2>About Me</h2>
+    <p>
+        <%= dataProfile.about_text %>
+    </p>
+
+    <h2>Services</h2>
+    <ul>
+        <li>Property Listings: <%= dataProfile.property_listings ? "Available" : "Not Available" %>
+        </li>
+        <li>Property Search: <%= dataProfile.property_search ? "Available" : "Not Available" %>
+        </li>
+        <li>Property Valuation: <%= dataProfile.property_valuation ? "Available" : "Not Available" %>
+        </li>
+        <li>Rental Services: <%= dataProfile.rental_services ? "Available" : "Not Available" %>
+        </li>
+        <li>Investment Properties: <%= dataProfile.investment_properties ? "Available" : "Not Available" %>
+        </li>
+        <li>Relocation Services: <%= dataProfile.relocation_services ? "Available" : "Not Available" %>
+        </li>
+        <li>Property Management: <%= dataProfile.property_management ? "Available" : "Not Available" %>
+        </li>
+        <li>Legal Contract Assistance: <%= dataProfile.legal_contract_assistance ? "Available" : "Not Available" %>
+        </li>
+        <li>Financial Advice: <%= dataProfile.financial_advice ? "Available" : "Not Available" %>
+        </li>
+        <li>Home Inspections: <%= dataProfile.home_inspections ? "Available" : "Not Available" %>
+        </li>
+        <li>Title & Escrow Services: <%= dataProfile.title_escrow_services ? "Available" : "Not Available" %>
+        </li>
+        <li>Financing Assistance: <%= dataProfile.financing_assistance ? "Available" : "Not Available" %>
+        </li>
+        <li>Investment Analysis: <%= dataProfile.investment_analysis ? "Available" : "Not Available" %>
+        </li>
+        <li>Lease Agreements: <%= dataProfile.lease_agreements ? "Available" : "Not Available" %>
+        </li>
+    </ul>
+</body>
+
+</html>
